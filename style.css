@@ -175,5 +175,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ background-image: linear-gradient(#C22033, #c96300);
+
 
 }
