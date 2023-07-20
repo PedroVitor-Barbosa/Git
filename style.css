@@ -11,7 +11,6 @@
 
 html{
   width: 100vw;
-  width: 100vh;
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -27,6 +26,7 @@ html{
    background-color: #ffffff;
    position: fixed;
    padding-left: 30rem;
+   
 }
 
 .logo{
@@ -125,20 +125,10 @@ justify-content: space-between;
   width: 100%;
   padding-bottom: 5rem;
   color: rgb(194, 3, 51);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   
-
-
 }
 
-.sobreNos img{
- width: 400px; 
- height: 400px;
- margin-top: 10rem;
- margin-left: 10rem
-}
+
 
 .main{
   display: flex;
@@ -170,12 +160,89 @@ justify-content: space-between;
 
 
 .cardapio{
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- background-image: linear-gradient(#C22033, #c96300);
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  background-image: linear-gradient(#C22033, #ff9100);
+}
+
+
+
+.cardapio h3{
+  font-size: 2rem;
+  color: #FFF;
+  text-transform: uppercase;
 
 }
+
+.itens-cardapio {
+  text-align: center;
+
+  > img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px;
+}
+
+.grid-item {
+  text-align: center;
+
+   >img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+}
+
+
+/*Contatos*/
+
+.contato{
+  width: 100%;
+  background-color: #c90445;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+  padding-bottom: 4rem;
+}
+
+.contato h3{
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+
+.contatos-secao{
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+
+}
+
+.contatos-secao i{
+  margin-right: 1rem;
+
+}
+
+.contatos-secao div{
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.contatos-secao div:hover{
+  color: #ff9100;
+}
+
